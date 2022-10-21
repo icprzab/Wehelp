@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+.head {
+    background-color: #102C47;
+    padding: 23px 0px 23px 0px;
+}
+
+.head h1 {
+    color: white;
+    text-align: center
+}
+
+
+.log_in h1 {
+    font-size: 27px;
+    text-align: center
+}
+
+.input_data {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 20px;
+
+}

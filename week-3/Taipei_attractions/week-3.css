@@ -1,0 +1,869 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+
+}
+
+@media (max-width:1920px) {
+
+
+    .section {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section0 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0px 0px 0px 10px;
+
+    }
+
+    .section1 {
+        font-size: 20px;
+        display: flex;
+    }
+
+    .image1 {
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        right: 0px;
+        opacity: 0;
+    }
+
+    .image1>img {
+        height: 40px;
+    }
+
+    .section11 {
+        margin: 0px 10px 0px 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .section2 {
+        height: 300px;
+        background-color: rgb(215, 244, 253);
+
+    }
+
+    .section2 h1 {
+        height: 300px;
+        font-size: 40px;
+        clear: both;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .section3 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 285px 285px 285px 285px;
+        grid-template-rows: 50px 170px 73.75px 170px 73.75px;
+        grid-template-areas:
+            "A A B B"
+            "C D E F"
+            "C D E F"
+            "G H I J"
+            "G H I J"
+        ;
+        grid-gap: 20px;
+    }
+
+    .AA {
+        grid-area: A;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .AA>img {
+        width: 80px;
+    }
+
+    .AA1 {
+        margin-left: 10px;
+    }
+
+    .BB {
+        grid-area: B;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .BB>img {
+        width: 80px;
+    }
+
+    .BB1 {
+        margin-left: 10px;
+    }
+
+    .CC {
+        grid-area: C;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        display: flex;
+        align-items: start;
+    }
+
+    .CC>img {
+        width: 285px;
+    }
+
+
+    .DD {
+        grid-area: D;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        display: flex;
+        align-items: start;
+
+    }
+
+    .DD>img {
+        width: 285px;
+    }
+
+    .EE {
+        grid-area: E;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        display: flex;
+        align-items: start;
+
+    }
+
+    .EE>img {
+        width: 285px;
+    }
+
+    .FF {
+        grid-area: F;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        display: flex;
+        align-items: start;
+
+    }
+
+    .FF>img {
+        width: 285px;
+    }
+
+    .GG {
+        grid-area: G;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        display: flex;
+        align-items: start;
+
+    }
+
+    .GG>img {
+        width: 285px;
+    }
+
+    .HH {
+        grid-area: H;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        display: flex;
+        align-items: start;
+
+    }
+
+    .HH>img {
+        width: 285px;
+    }
+
+    .II {
+        grid-area: I;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        display: flex;
+        align-items: start;
+
+    }
+
+    .II>img {
+        width: 285px;
+    }
+
+    .JJ {
+        grid-area: J;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        display: flex;
+        align-items: start;
+
+    }
+
+    .JJ>img {
+        width: 285px;
+    }
+
+    .K {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .L {
+        grid-row: 3/4;
+        grid-column: 2/3;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .M {
+        grid-row: 3/4;
+        grid-column: 3/4;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .N {
+        grid-row: 3/4;
+        grid-column: 4/5;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .O {
+        grid-row: 5/6;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .P {
+        grid-row: 5/6;
+        grid-column: 2/3;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .Q {
+        grid-row: 5/6;
+        grid-column: 3/4;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .R {
+        grid-row: 5/6;
+        grid-column: 4/5;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width:1200px) {
+
+    .section {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+
+    .section0 {
+        font-size: 20px;
+        margin: 0px 0px 0px 10px;
+
+
+    }
+
+    .section1 {
+        font-size: 20px;
+        display: flex;
+
+    }
+
+    .section11 {
+        margin: 0px 10px 0px 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .section2 {
+        width: 100%;
+        height: 300px;
+        background-color: rgb(215, 244, 253);
+
+    }
+
+    .section2 h1 {
+        height: 300px;
+        font-size: 40px;
+        clear: both;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 43vw 43vw;
+        grid-template-rows: 7vw 24vw 7vw 24vw 7vw 24vw 7vw 24vw 7vw;
+        grid-template-areas:
+            "A B"
+            "C D"
+            "C D"
+            "E F"
+            "E F"
+            "G H"
+            "G H"
+            "I J"
+            "I J"
+        ;
+        grid-gap: 4vw;
+    }
+
+    .AA {
+        grid-area: A;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .AA>img {
+        width: 11.2vw;
+    }
+
+    .AA1 {
+        margin-left: 10px;
+    }
+
+    .BB {
+        grid-area: B;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .BB>img {
+        width: 11.2vw;
+    }
+
+    .BB1 {
+        margin-left: 10px;
+    }
+
+    .CC {
+        background-color: rgb(215, 244, 253);
+    }
+
+    .CC>img {
+        width: 43vw;
+    }
+
+
+    .DD {
+        grid-area: D;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .DD>img {
+        width: 43vw;
+    }
+
+    .EE {
+        grid-area: E;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .EE>img {
+        width: 43vw;
+    }
+
+    .FF {
+        grid-area: F;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .FF>img {
+        width: 43vw;
+    }
+
+    .GG {
+        grid-area: G;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .GG>img {
+        width: 43vw;
+    }
+
+    .HH {
+        grid-area: H;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .HH>img {
+        width: 43vw;
+    }
+
+    .II {
+        grid-area: I;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .II>img {
+        width: 43vw;
+    }
+
+    .JJ {
+        grid-area: J;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .JJ>img {
+        width: 43vw;
+    }
+
+    .K {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .L {
+        grid-row: 3/4;
+        grid-column: 2/3;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .M {
+        grid-row: 5/6;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .N {
+        grid-row: 5/6;
+        grid-column: 2/3;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .O {
+        grid-row: 7/8;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .P {
+        grid-row: 7/8;
+        grid-column: 2/3;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Q {
+        grid-row: 9/10;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .R {
+        grid-row: 9/10;
+        grid-column: 2/3;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+
+@media (max-width:600px) {
+
+    .section {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .image1 {
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        right: 0px;
+        opacity: 100;
+    }
+
+
+    .section0 {
+        font-size: 20px;
+        margin: 0px 0px 0px 10px;
+
+    }
+
+    .section1 {
+        font-size: 0px;
+        display: flex;
+
+
+    }
+
+    .section11 {
+        margin: 0px 10px 0px 10px;
+    }
+
+    .section2 {
+        width: 100%;
+        height: 300px;
+        background-color: rgb(215, 244, 253);
+
+    }
+
+    .section2 h1 {
+        height: 300px;
+        font-size: 30px;
+        clear: both;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 90vw;
+        grid-template-rows: 12vw 12vw 58vw 22vw 58vw 22vw 58vw 22vw 58vw 22vw 58vw 22vw 58vw 22vw 58vw 22vw 58vw 22vw;
+        grid-template-areas:
+            "A"
+            "B"
+            "C"
+            "C"
+            "D"
+            "D"
+            "E"
+            "E"
+            "F"
+            "F"
+            "G"
+            "G"
+            "H"
+            "H"
+            "I"
+            "I"
+            "J"
+            "J"
+        ;
+        grid-gap: 5vw;
+    }
+
+    .AA {
+        grid-area: A;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .AA>img {
+        width: 19.2vw;
+    }
+
+    .AA1 {
+        margin-left: 10px;
+    }
+
+    .BB {
+        grid-area: B;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .BB>img {
+        width: 19.2vw;
+    }
+
+    .BB1 {
+        margin-left: 10px;
+    }
+
+    .CC {
+        background-color: rgb(215, 244, 253);
+    }
+
+    .CC>img {
+        width: 90vw;
+    }
+
+
+    .DD {
+        grid-area: D;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .DD>img {
+        width: 90vw;
+    }
+
+    .EE {
+        grid-area: E;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .EE>img {
+        width: 90vw;
+    }
+
+    .FF {
+        grid-area: F;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .FF>img {
+        width: 90vw;
+    }
+
+    .GG {
+        grid-area: G;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .GG>img {
+        width: 90vw;
+    }
+
+    .HH {
+        grid-area: H;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .HH>img {
+        width: 90vw;
+    }
+
+    .II {
+        grid-area: I;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .II>img {
+        width: 90vw;
+    }
+
+    .JJ {
+        grid-area: J;
+        background-color: rgb(215, 244, 253);
+        overflow: hidden;
+    }
+
+    .JJ>img {
+        width: 90vw;
+    }
+
+    .K {
+        grid-row: 4/5;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .L {
+        grid-row: 6/7;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .M {
+        grid-row: 8/9;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .N {
+        grid-row: 10/11;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .O {
+        grid-row: 12/13;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .P {
+        grid-row: 14/15;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Q {
+        grid-row: 16/17;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .R {
+        grid-row: 18/19;
+        grid-column: 1/2;
+        background-color: rgb(215, 244, 253);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
