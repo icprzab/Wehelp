@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="
+    {{url_for('static',filename='front page.css' )}}
+    ">
+</head>
+
+<body>
+    <div>
+        <div class="head">
+            <h1>歡迎光臨，請註冊登入系統</h1>
+        </div>
+        </br>
+        </br>
+        <div>
+            <div class="log_in">
+                <h1>
+                    註冊帳號
+                </h1>
+            </div>
+            <form action="/signup" method="POST">
+                <div class="input_data">
+                    姓名&ensp;<input type="text" name="new_name" />
+                </div>
+                <div class="input_data">
+                    帳號&ensp;<input type="text" name="new_ID" />
+                </div>
+                <div class="input_data">
+                    密碼&ensp;<input type="password" name="new_password" />
+                </div>
+                <div class="input_data">
+                    <button>註冊</button>
+                </div>
+            </form>
+        </div>
+        </br>
+        <div class="line"></div>
+        </br>
+        <div>
+            <div class="log_in">
+                <h1>
+                    登入系統
+                </h1>
+            </div>
+            <form action="/signin" method="POST">
+                <div class="input_data">
+                    帳號&ensp;<input type="text" name="ID" />
+                </div>
+                <div class="input_data">
+                    密碼&ensp;<input type="password" name="password" />
+                </div>
+                <div class="input_data">
+                    <button>登入</button>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
