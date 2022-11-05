@@ -1,16 +1,15 @@
-from flask import Flask, request, render_template, redirect, url_for, session
+from flask import Flask, request, render_template, redirect, url_for, session, jsonify
 import os
 import mysql.connector
 
+app = Flask(__name__)
+app.secret_key = os.urandom(24)
 db = mysql.connector.connect(
     host="localhost",
     user="root",
     passwd="",
     database="website"
 )
-
-app = Flask(__name__)
-app.secret_key = os.urandom(24)
 
 
 @app.route("/")
@@ -72,7 +71,6 @@ def member():
         mycursor.execute(
             "SELECT member.username, message.content FROM member INNER JOIN message ON member.id=message.member_id ORDER BY message.id ASC")
         myresult3 = mycursor.fetchall()
-
         return render_template("success.html", member_name=member_name, myresult3=myresult3)
     return redirect(url_for("index"))
 
@@ -90,6 +88,46 @@ def message():
     return redirect(url_for("member"))
 
 
+@app.route("/api/member", methods=["POST"])
+def api_member():
+    mycursor = db.cursor()
+    res = request.get_json()
+    res2 = res["username"]
+    query5 = "SELECT id, name, username FROM member WHERE username = %s"
+    mycursor.execute(query5, (res2,))
+    myresult4 = mycursor.fetchone()
+    if myresult4 != None:
+        content = {
+            "id": str(myresult4[0]), "name": str(myresult4[1]), "username": str(myresult4[2])}
+        session["username"] = content
+        data = {"data": content}
+        return jsonify(data)
+
+    elif myresult4 == None:
+        data2 = {"data": {"name": "無此會員"}}
+        return jsonify(data2)
+
+
+@app.route("/api/member", methods=["PATCH"])
+def api_member2():
+    if "ID" in session:
+        mycursor = db.cursor()
+        name = session["member_name"]
+        res3 = request.get_json()
+        res4 = res3["name"]
+        if res4 != "":
+            query6 = "UPDATE member SET name = %s WHERE username = %s"
+            mycursor.execute(query6, (res4, name,))
+            db.commit()
+            data3 = {"ok": "更新成功"}
+            return jsonify(data3)
+        else:
+            data4 = {"ok": "更新失敗"}
+            return jsonify(data4)
+
+    return redirect(url_for("index"))
+
+
 @app.route("/error")
 def error():
     if "fail" in session:
@@ -105,5 +143,5 @@ def signout():
 
 
 if __name__ == '__main__':
-    app.debug = True
-    app.run(port=3000)
+    # app.debug = True
+    app.run(port=3000, debug=True)
