@@ -88,13 +88,12 @@ def message():
     return redirect(url_for("member"))
 
 
-@app.route("/api/member", methods=["POST"])
+@app.route("/api/member", methods=["GET"])
 def api_member():
     mycursor = db.cursor()
-    res = request.get_json()
-    res2 = res["username"]
+    username = request.args.get("username")
     query5 = "SELECT id, name, username FROM member WHERE username = %s"
-    mycursor.execute(query5, (res2,))
+    mycursor.execute(query5, (username,))
     myresult4 = mycursor.fetchone()
     if myresult4 != None:
         content = {
@@ -103,8 +102,8 @@ def api_member():
         data = {"data": content}
         return jsonify(data)
 
-    elif myresult4 == None:
-        data2 = {"data": {"name": "無此會員"}}
+    else:
+        data2 = {"data": None}
         return jsonify(data2)
 
 
@@ -119,13 +118,11 @@ def api_member2():
             query6 = "UPDATE member SET name = %s WHERE username = %s"
             mycursor.execute(query6, (res4, name,))
             db.commit()
-            data3 = {"ok": "更新成功"}
+            data3 = {"ok": True}
             return jsonify(data3)
-        else:
-            data4 = {"ok": "更新失敗"}
-            return jsonify(data4)
-
-    return redirect(url_for("index"))
+    else:
+        data4 = {"error": True}
+        return jsonify(data4)
 
 
 @app.route("/error")
@@ -143,5 +140,4 @@ def signout():
 
 
 if __name__ == '__main__':
-    # app.debug = True
     app.run(port=3000, debug=True)

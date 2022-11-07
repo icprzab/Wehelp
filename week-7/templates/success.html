@@ -40,12 +40,14 @@
             </h1>
         </div>
 
-        <div action="/message" class="inputData">
-            內容&ensp;<input type="text" name="message_content" />
-        </div>
-        <div class="inputData">
-            <button>送出</button>
-        </div>
+        <form action="/message" method="POST">
+            <div class="inputData">
+                內容&ensp;<input type="text" name="message_content" />
+            </div>
+            <div class="inputData">
+                <button>送出</button>
+            </div>
+        </form>
 
     </div>
 
